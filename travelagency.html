@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wanderlust Adventures - Discover Your Next Journey</title> <!--this is the title of the page-->
+    <!--I used bootstrap's properties, classes, functionalities here-->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        --bs-primary: #2c3e50;
+        --bs-secondary: #3498db;
+        --bs-warning: #e67e22;
+      }
+
+      .hero-bg { /*this is the background photo for this section*/
+        background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+          url("./travelphotos/hero_photo.jpg");
+        background-size: cover;
+        background-position: center;
+        min-height: 100vh;
+      }
+
+      .navbar-gradient {
+        background: linear-gradient(
+          135deg,
+          var(--bs-primary),
+          var(--bs-secondary)
+        ) !important; 
+      }
+
+      .card-hover:hover {
+        transform: translateY(-5px);
+      }
+
+      .btn-hover:hover {
+        transform: translateY(-2px);
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav
+      class="navbar navbar-expand-lg navbar-dark fixed-top navbar-gradient shadow"
+    >
+      <div class="container"> <!--I created a container here with an anchor tag and used a globe logo-->
+        <a class="navbar-brand fw-bold fs-3" href="#">
+          <i class="fas fa-globe-americas me-2"></i>Wanderlust Adventures
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link fw-semibold px-3" href="#home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fw-semibold px-3" href="#destinations"
+                >Destinations</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fw-semibold px-3" href="#tours">Tours</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fw-semibold px-3" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section
+      id="home"
+      class="hero-bg d-flex align-items-center text-white text-center"
+    >
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
+            <h1 class="display-2 fw-bold mb-4 text-shadow">
+              Discover Your Next Adventure
+            </h1>
+            <p class="lead fs-4 mb-5">
+              Explore breathtaking destinations and create unforgettable
+              memories with our expertly crafted travel experiences
+            </p>
+            <button
+              class="btn btn-warning btn-lg px-5 py-3 rounded-pill fw-bold btn-hover transition-all"
+            >
+              Start Your Journey
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Destinations Section -->
+    <section id="destinations" class="py-5">
+      <div class="container py-4">
+        <div class="text-center mb-5">
+          <h2 class="display-4 fw-bold text-primary mb-3">
+            Popular Destinations
+          </h2>
+          <div
+            class="bg-warning mx-auto"
+            style="width: 80px; height: 3px"
+          ></div>
+          <p class="lead text-muted mt-3">
+            Discover the world's most captivating places
+          </p>
+        </div>
+        <div class="row g-4">
+          <div class="col-lg-4 col-md-6">
+            <div
+              class="card h-100 border-0 shadow rounded-4 card-hover transition-all"
+            >
+              <img
+                src="./travelphotos/greece.jpg"
+                class="card-img-top rounded-top-4"
+                alt="Santorini, Greece"
+                style="height: 250px; object-fit: cover"
+              />
+              <div class="card-body d-flex flex-column p-4">
+                <h5 class="card-title fw-bold text-primary">
+                  Santorini, Greece
+                </h5>
+                <p class="card-text flex-grow-1 text-muted">
+                  Experience the magic of this volcanic island with its iconic
+                  blue-domed churches, stunning sunsets, and crystal-clear
+                  waters. Perfect for romantic getaways and photography
+                  enthusiasts.
+                </p>
+                <button
+                  class="btn btn-primary rounded-pill fw-semibold btn-hover transition-all"
+                >
+                  Learn More
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div
+              class="card h-100 border-0 shadow rounded-4 card-hover transition-all"
+            >
+              <img
+                src="./travelphotos/peru.jpg"
+                class="card-img-top rounded-top-4"
+                alt="Machu Picchu, Peru"
+                style="height: 250px; object-fit: cover"
+              />
+              <div class="card-body d-flex flex-column p-4">
+                <h5 class="card-title fw-bold text-primary">
+                  Machu Picchu, Peru
+                </h5>
+                <p class="card-text flex-grow-1 text-muted">
+                  Journey to the ancient Incan citadel nestled high in the Andes
+                  Mountains. This UNESCO World Heritage site offers breathtaking
+                  views and rich cultural history.
+                </p>
+                <button
+                  class="btn btn-primary rounded-pill fw-semibold btn-hover transition-all"
+                >
+                  Learn More
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div
+              class="card h-100 border-0 shadow rounded-4 card-hover transition-all"
+            >
+              <img
+                src="./travelphotos/bali.jpg"
+                class="card-img-top rounded-top-4"
+                alt="Bali, Indonesia"
+                style="height: 250px; object-fit: cover"
+              />
+              <div class="card-body d-flex flex-column p-4">
+                <h5 class="card-title fw-bold text-primary">Bali, Indonesia</h5>
+                <p class="card-text flex-grow-1 text-muted">
+                  Immerse yourself in the island paradise of Bali with its lush
+                  rice terraces, ancient temples, beautiful beaches, and vibrant
+                  culture. A perfect blend of relaxation and adventure.
+                </p>
+                <button
+                  class="btn btn-primary rounded-pill fw-semibold btn-hover transition-all"
+                >
+                  Learn More
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Tours Section -->
+    <section id="tours" class="py-5 bg-light">
+      <div class="container py-4">
+        <div class="text-center mb-5">
+          <h2 class="display-4 fw-bold text-primary mb-3">Tour Packages</h2>
+          <div
+            class="bg-warning mx-auto"
+            style="width: 80px; height: 3px"
+          ></div>
+          <p class="lead text-muted mt-3">
+            Choose from our carefully curated travel experiences
+          </p>
+        </div>
+        <div class="accordion" id="toursAccordion">
+          <div class="accordion-item border-0 shadow rounded-4 mb-3">
+            <h2 class="accordion-header" id="headingOne">
+              <button
+                class="accordion-button bg-primary text-white fw-bold py-3 px-4 rounded-top-4"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseOne"
+                aria-expanded="true"
+                aria-controls="collapseOne"
+              >
+                <i class="fas fa-mountain me-3"></i>Alpine Adventure - 7 Days
+              </button>
+            </h2>
+            <div
+              id="collapseOne"
+              class="accordion-collapse collapse show"
+              aria-labelledby="headingOne"
+              data-bs-parent="#toursAccordion"
+            >
+              <div class="accordion-body bg-white p-4">
+                <div class="row align-items-center">
+                  <div class="col-md-8">
+                    <p class="mb-3">
+                      Experience the breathtaking beauty of the Swiss Alps with
+                      our 7-day adventure package. Including guided hiking
+                      tours, mountain railway journeys, and luxury alpine
+                      accommodations.
+                    </p>
+                    <ul class="list-unstyled">
+                      <li class="mb-2">
+                        <i class="fas fa-check text-success me-2"></i
+                        >Professional mountain guides
+                      </li>
+                      <li class="mb-2">
+                        <i class="fas fa-check text-success me-2"></i>4-star
+                        mountain hotels
+                      </li>
+                      <li class="mb-2">
+                        <i class="fas fa-check text-success me-2"></i>All meals
+                        included
+                      </li>
+                      <li class="mb-2">
+                        <i class="fas fa-check text-success me-2"></i
+                        >Transportation included
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="col-md-4 text-center">
+                    <div class="display-6 fw-bold text-warning mb-3">
+                      $2,499
+                    </div>
+                    <a
+                      href="#"
+                      class="btn btn-outline-primary rounded-pill px-4 fw-semibold"
+                      >View Details</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item border-0 shadow rounded-4 mb-3">
+            <h2 class="accordion-header" id="headingTwo">
+              <button
+                class="accordion-button collapsed bg-primary text-white fw-bold py-3 px-4 rounded-top-4"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseTwo"
+                aria-expanded="false"
+                aria-controls="collapseTwo"
+              >
+                <i class="fas fa-umbrella-beach me-3"></i>Tropical Paradise - 10
+                Days
+              </button>
+            </h2>
+            <div
+              id="collapseTwo"
+              class="accordion-collapse collapse"
+              aria-labelledby="headingTwo"
+              data-bs-parent="#toursAccordion"
+            >
+              <div class="accordion-body bg-white p-4">
+                <div class="row align-items-center">
+                  <div class="col-md-8">
+                    <p class="mb-3">
+                      Relax and unwind in the Maldives with our 10-day tropical
+                      paradise package. Enjoy overwater bungalows, pristine
+                      beaches, and world-class diving experiences.
+                    </p>
+                    <ul class="list-unstyled">
+                      <li class="mb-2">
+                        <i class="fas fa-check text-success me-2"></i>Overwater
+                        villa accommodation
+                      </li>
+                      <li class="mb-2">
+                        <i class="fas fa-check text-success me-2"></i>Daily
+                        breakfast and dinner
+                      </li>
+                      <li class="mb-2">
+                        <i class="fas fa-check text-success me-2"></i>Snorkeling
+                        and diving trips
+                      </li>
+                      <li class="mb-2">
+                        <i class="fas fa-check text-success me-2"></i>Spa
+                        treatments included
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="col-md-4 text-center">
+                    <div class="display-6 fw-bold text-warning mb-3">
+                      $4,999
+                    </div>
+                    <a
+                      href="#"
+                      class="btn btn-outline-primary rounded-pill px-4 fw-semibold"
+                      >View Details</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item border-0 shadow rounded-4 mb-3">
+            <h2 class="accordion-header" id="headingThree">
+              <button
+                class="accordion-button collapsed bg-primary text-white fw-bold py-3 px-4 rounded-top-4"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseThree"
+                aria-expanded="false"
+                aria-controls="collapseThree"
+              >
+                <i class="fas fa-landmark me-3"></i>Cultural Heritage - 14 Days
+              </button>
+            </h2>
+            <div
+              id="collapseThree"
+              class="accordion-collapse collapse"
+              aria-labelledby="headingThree"
+              data-bs-parent="#toursAccordion"
+            >
+              <div class="accordion-body bg-white p-4">
+                <div class="row align-items-center">
+                  <div class="col-md-8">
+                    <p class="mb-3">
+                      Explore Europe's rich cultural heritage with visits to
+                      Rome, Paris, and London. Experience historical landmarks,
+                      world-class museums, and local cuisine.
+                    </p>
+                    <ul class="list-unstyled">
+                      <li class="mb-2">
+                        <i class="fas fa-check text-success me-2"></i>Expert
+                        cultural guides
+                      </li>
+                      <li class="mb-2">
+                        <i class="fas fa-check text-success me-2"></i>Boutique
+                        hotels in city centers
+                      </li>
+                      <li class="mb-2">
+                        <i class="fas fa-check text-success me-2"></i
+                        >Skip-the-line museum tickets
+                      </li>
+                      <li class="mb-2">
+                        <i class="fas fa-check text-success me-2"></i>High-speed
+                        train travel
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="col-md-4 text-center">
+                    <div class="display-6 fw-bold text-warning mb-3">
+                      $3,799
+                    </div>
+                    <a
+                      href="#"
+                      class="btn btn-outline-primary rounded-pill px-4 fw-semibold"
+                      >View Details</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section
+      id="contact"
+      class="py-5 bg-gradient"
+      style="background: linear-gradient(135deg, #f8f9fa, #e9ecef)"
+    >
+      <div class="container py-4">
+        <div class="text-center mb-5">
+          <h2 class="display-4 fw-bold text-primary mb-3">Plan Your Journey</h2>
+          <div
+            class="bg-warning mx-auto"
+            style="width: 80px; height: 3px"
+          ></div>
+          <p class="lead text-muted mt-3">
+            Let us help you create your perfect travel experience
+          </p>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
+            <div class="card border-0 shadow-lg rounded-4">
+              <div class="card-body p-5">
+                <form>
+                  <div class="row g-4">
+                    <div class="col-md-6">
+                      <label for="firstName" class="form-label fw-semibold"
+                        >First Name</label
+                      >
+                      <input
+                        type="text"
+                        class="form-control form-control-lg rounded-3 border-2"
+                        id="firstName"
+                        required
+                      />
+                    </div>
+                    <div class="col-md-6">
+                      <label for="lastName" class="form-label fw-semibold"
+                        >Last Name</label
+                      >
+                      <input
+                        type="text"
+                        class="form-control form-control-lg rounded-3 border-2"
+                        id="lastName"
+                        required
+                      />
+                    </div>
+                    <div class="col-12">
+                      <label for="email" class="form-label fw-semibold"
+                        >Email Address</label
+                      >
+                      <input
+                        type="email"
+                        class="form-control form-control-lg rounded-3 border-2"
+                        id="email"
+                        required
+                      />
+                    </div>
+                    <div class="col-12">
+                      <label for="destination" class="form-label fw-semibold"
+                        >Destination of Interest</label
+                      >
+                      <select
+                        class="form-select form-select-lg rounded-3 border-2"
+                        id="destination"
+                      >
+                        <option value="">Select a destination</option>
+                        <option value="santorini">Santorini, Greece</option>
+                        <option value="machu-picchu">Machu Picchu, Peru</option>
+                        <option value="bali">Bali, Indonesia</option>
+                        <option value="alps">Swiss Alps</option>
+                        <option value="maldives">Maldives</option>
+                        <option value="europe">European Cities</option>
+                        <option value="other">Other</option>
+                      </select>
+                    </div>
+                    <div class="col-12">
+                      <label for="message" class="form-label fw-semibold"
+                        >Message</label
+                      >
+                      <textarea
+                        class="form-control form-control-lg rounded-3 border-2"
+                        id="message"
+                        rows="5"
+                        placeholder="Tell us about your dream trip..."
+                      ></textarea>
+                    </div>
+                    <div class="col-12 text-center">
+                      <button
+                        type="submit"
+                        class="btn btn-warning btn-lg px-5 py-3 rounded-pill fw-bold btn-hover transition-all"
+                      >
+                        <i class="fas fa-paper-plane me-2"></i>Send Message
+                      </button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-primary text-white py-5">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md-6">
+            <div class="d-flex align-items-center mb-3 mb-md-0">
+              <i class="fas fa-globe-americas fs-2 me-3"></i>
+              <div>
+                <h5 class="mb-0">Wanderlust Adventures</h5>
+                <small class="text-white-50">Your journey starts here</small>
+              </div>
+            </div>
+            <p class="mb-0 text-white-50">
+              &copy; 2025 Wanderlust Adventures. All rights reserved. David F.
+              Effiong
+            </p>
+          </div>
+          <div class="col-md-6">
+            <div class="text-center text-md-end">
+              <p class="mb-2 fw-semibold">Follow Us</p>
+              <div
+                class="d-flex justify-content-center justify-content-md-end gap-3"
+              >
+                <a
+                  href="#"
+                  class="text-white fs-4 text-decoration-none"
+                  aria-label="Facebook"
+                >
+                  <i class="fab fa-facebook"></i>
+                </a>
+                <a
+                  href="#"
+                  class="text-white fs-4 text-decoration-none"
+                  aria-label="Instagram"
+                >
+                  <i class="fab fa-instagram"></i>
+                </a>
+                <a
+                  href="#"
+                  class="text-white fs-4 text-decoration-none"
+                  aria-label="Twitter"
+                >
+                  <i class="fab fa-twitter"></i>
+                </a>
+                <a
+                  href="#"
+                  class="text-white fs-4 text-decoration-none"
+                  aria-label="YouTube"
+                >
+                  <i class="fab fa-youtube"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
