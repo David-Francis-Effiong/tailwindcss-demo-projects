@@ -1,7 +1,7 @@
 # Ignore all media/image folders
 
 
-Restaurantimages/
+
 
 Docplannerimages/
 
@@ -16,13 +16,17 @@ docplan.html
 docplan.css
 docplanner.html
 docplanner.css
-s
-restaurantbootstrap.html
+travelphotos
+icons
+
+
 
 portfoliowebpage.html
 docplanlayout.html
 docplanlayout.css
 restaurantmenu.html
+restaurantbootstrap.html
+travelagency.html 
 styles.css
 
 # Ignore config and formatting files
