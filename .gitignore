@@ -1,12 +1,9 @@
 # Ignore all media/image folders
-
-
-
-
 Docplannerimages/
 
 # Ignore software course materials unless needed later
-Software Engineering Course/
+Software Engineering Course Materials/
+
 
 # Ignore work-in-progress HTML and CSS files
 bootstrap.html
@@ -18,14 +15,15 @@ docplanner.html
 docplanner.css
 travelphotos
 icons
-
-
-
+onlinestore.css
+onlinestore.html
 portfoliowebpage.html
 docplanlayout.html
 docplanlayout.css
 restaurantmenu.html
 restaurantbootstrap.html
+restaurantbootstrap.css
+restaurantimages/
 travelagency.html 
 styles.css
 
