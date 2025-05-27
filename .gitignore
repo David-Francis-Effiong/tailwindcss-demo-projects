@@ -1,0 +1,40 @@
+# Ignore all media/image folders
+Docplannerimages/
+
+# Ignore software course materials unless needed later
+Software Engineering Course Materials/
+
+
+# Ignore work-in-progress HTML and CSS files
+bootstrap.html
+bootstrap.css
+bootstraprestaurant.html
+docplan.html
+docplan.css
+docplanner.html
+docplanner.css
+travelphotos
+icons
+onlinestore.css
+onlinestore.html
+portfoliowebpage.html
+docplanlayout.html
+docplanlayout.css
+restaurantmenu.html
+restaurantbootstrap.html
+restaurantbootstrap.css
+restaurantimages/
+travelagency.html 
+styles.css
+
+# Ignore config and formatting files
+.prettierrc
+
+# Node or environment folders if they show up later
+node_modules/
+.env
+
+# Optional: Ignore VSCode and OS-specific files
+.vscode/
+.DS_Store
+Thumbs.db
